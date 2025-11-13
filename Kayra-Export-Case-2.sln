@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.12.35521.163 d17.12
+VisualStudioVersion = 17.12.35521.163
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{407ACA1A-9980-4A98-A45D-827BF7341A4C}"
 EndProject
@@ -18,6 +18,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		.gitignore = .gitignore
 		docker-compose.yml = docker-compose.yml
 	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShopApp.Auth", "src\ShopApp.Auth\ShopApp.Auth.csproj", "{67EEBB0B-F0A3-4A25-B6E8-7D2803C8E459}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -41,6 +43,10 @@ Global
 		{CD54FBD2-8D3B-4B40-8A82-6F6B03449D64}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CD54FBD2-8D3B-4B40-8A82-6F6B03449D64}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CD54FBD2-8D3B-4B40-8A82-6F6B03449D64}.Release|Any CPU.Build.0 = Release|Any CPU
+		{67EEBB0B-F0A3-4A25-B6E8-7D2803C8E459}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{67EEBB0B-F0A3-4A25-B6E8-7D2803C8E459}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{67EEBB0B-F0A3-4A25-B6E8-7D2803C8E459}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{67EEBB0B-F0A3-4A25-B6E8-7D2803C8E459}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -50,5 +56,6 @@ Global
 		{211DBAF0-A3FF-43CD-A923-9A186B4D7DCE} = {407ACA1A-9980-4A98-A45D-827BF7341A4C}
 		{D637BCB6-49F8-4C30-9DC1-DA3440ED60CE} = {407ACA1A-9980-4A98-A45D-827BF7341A4C}
 		{CD54FBD2-8D3B-4B40-8A82-6F6B03449D64} = {407ACA1A-9980-4A98-A45D-827BF7341A4C}
+		{67EEBB0B-F0A3-4A25-B6E8-7D2803C8E459} = {407ACA1A-9980-4A98-A45D-827BF7341A4C}
 	EndGlobalSection
 EndGlobal

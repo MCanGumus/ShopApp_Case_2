@@ -1,11 +1,10 @@
-﻿using DotNetEnv;
+using DotNetEnv;
 using Microsoft.EntityFrameworkCore;
 using ShopApp.Application.Features.Products.Handlers.Commands;
 using ShopApp.Core.Interfaces;
 using ShopApp.Infrastructure.Context;
 using ShopApp.Infrastructure.Persistence;
 using StackExchange.Redis;
-using System;
 
 Env.Load();
 
@@ -39,7 +38,6 @@ builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();

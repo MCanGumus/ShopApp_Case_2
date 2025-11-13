@@ -16,6 +16,7 @@ namespace ShopApp.Infrastructure.Context
         {
         }
         public DbSet<Product> Products { get; set; } 
+        public DbSet<User> Users { get; set; } 
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -30,6 +31,14 @@ namespace ShopApp.Infrastructure.Context
                 entity.Property(p => p.Category).IsRequired();
                 entity.Property(p => p.StockQuantity).IsRequired();
                 entity.Property(p => p.ImageUrl).HasMaxLength(500);
+            });
+
+            modelBuilder.Entity<User>(entity =>
+            {
+                entity.HasKey(p => p.Id);
+                entity.Property(p => p.Username).IsRequired().HasMaxLength(50);
+                entity.Property(p => p.Email).HasMaxLength(100);
+                entity.Property(p => p.PasswordHash).HasMaxLength(250);
             });
         }
     }
