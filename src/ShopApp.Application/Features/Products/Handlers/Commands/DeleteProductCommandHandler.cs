@@ -27,9 +27,9 @@ namespace ShopApp.Application.Features.Products.Handlers.Commands
                 throw new KeyNotFoundException("Product not found");
 
             await _productRepository.DeleteAsync(request.Id, cancellationToken);
-
-            // Cache invalidation
-            await _cacheService.RemoveAsync($"products:category:{existingProduct.Category}");
+           
+            await _cacheService.RemoveAsync($"products:category:{existingProduct.Category}"); 
+            await _cacheService.RemoveAsync("products:all");
 
         }
     }

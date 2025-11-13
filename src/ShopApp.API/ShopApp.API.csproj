@@ -9,12 +9,12 @@
   <ItemGroup>
     <PackageReference Include="DotNetEnv" Version="3.1.1" />
     <PackageReference Include="MediatR" Version="13.1.0" />
-    <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="9.0.9" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="9.0.11">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
     <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="9.0.4" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.9.0" />
   </ItemGroup>
 
   <ItemGroup>
@@ -24,6 +24,7 @@
   <ItemGroup>
     <ProjectReference Include="..\ShopApp.Application\ShopApp.Application.csproj" />
     <ProjectReference Include="..\ShopApp.Infrastructure\ShopApp.Infrastructure.csproj" />
+    <ProjectReference Include="..\ShopApp.Core\ShopApp.Core.csproj" />
   </ItemGroup>
 
 </Project>

@@ -43,7 +43,7 @@ namespace ShopApp.API.Controllers
         }
 
         [HttpPost]
-        [Authorize]
+        //[Authorize]
         public async Task<IActionResult> Create([FromBody] CreateProductCommand command)
         {
             var product = await _mediator.Send(command);
@@ -51,7 +51,7 @@ namespace ShopApp.API.Controllers
         }
 
         [HttpPut("{id}")]
-        [Authorize]
+        //[Authorize]
         public async Task<IActionResult> Update(Guid id, [FromBody] UpdateProductCommand command)
         {
             if (id != command.Id)
@@ -62,7 +62,7 @@ namespace ShopApp.API.Controllers
         }
 
         [HttpDelete("{id}")]
-        [Authorize]
+        //[Authorize]
         public async Task<IActionResult> Delete(Guid id)
         {
             await _mediator.Send(new DeleteProductCommand(id));

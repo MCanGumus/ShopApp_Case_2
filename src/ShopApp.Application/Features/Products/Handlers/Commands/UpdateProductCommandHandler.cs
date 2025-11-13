@@ -39,6 +39,7 @@ namespace ShopApp.Application.Features.Products.Handlers.Commands
             await _productRepository.UpdateAsync(existingProduct, cancellationToken);
 
             await _cacheService.RemoveAsync($"products:category:{existingProduct.Category}");
+            await _cacheService.RemoveAsync("products:all");
 
             return existingProduct;
         }

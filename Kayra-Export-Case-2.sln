@@ -15,6 +15,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShopApp.API", "src\ShopApp.
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{ECA80A4D-A326-4A80-8A88-D8E639868F59}"
 	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
 		docker-compose.yml = docker-compose.yml
 	EndProjectSection
 EndProject

@@ -35,8 +35,8 @@ namespace ShopApp.Application.Features.Products.Handlers.Commands
 
             var addedProduct = await _repository.AddAsync(product, cancellationToken);
 
-            // Cache invalidation
-            await _cacheService.RemoveAsync($"products:category:{product.Category}");
+            await _cacheService.RemoveAsync($"products:category:{product.Category}"); 
+            await _cacheService.RemoveAsync("products:all");
 
             return addedProduct;
         }
