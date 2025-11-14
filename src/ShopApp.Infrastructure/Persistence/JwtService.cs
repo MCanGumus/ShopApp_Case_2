@@ -2,6 +2,7 @@
 using Microsoft.IdentityModel.Tokens;
 using ShopApp.Core.Entities;
 using ShopApp.Core.Interfaces;
+using ShopApp.Core.Models;
 using System;
 using System.Collections.Generic;
 using System.IdentityModel.Tokens.Jwt;
@@ -14,11 +15,11 @@ namespace ShopApp.Infrastructure.Persistence
 {
     public class JwtService : IJwtService
     {
-        private readonly IConfiguration _config;
+        private readonly JwtSettings _settings;
 
-        public JwtService(IConfiguration config)
+        public JwtService(JwtSettings settings)
         {
-            _config = config;
+            _settings = settings;
         }
 
         public string GenerateToken(User user)
@@ -30,12 +31,12 @@ namespace ShopApp.Infrastructure.Persistence
                 new Claim(JwtRegisteredClaimNames.Email, user.Email)
             };
 
-            var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_config["Jwt:Key"]!));
+            var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_settings.Key!));
             var creds = new SigningCredentials(key, SecurityAlgorithms.HmacSha256);
 
             var token = new JwtSecurityToken(
-                issuer: _config["Jwt:Issuer"],
-                audience: _config["Jwt:Audience"],
+                issuer: _settings.Issuer,
+                audience: _settings.Audience,
                 claims: claims,
                 expires: DateTime.UtcNow.AddHours(3),
                 signingCredentials: creds

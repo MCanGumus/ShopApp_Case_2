@@ -2,6 +2,7 @@ using DotNetEnv;
 using Microsoft.EntityFrameworkCore;
 using ShopApp.Application.Features.Products.Handlers.Commands;
 using ShopApp.Core.Interfaces;
+using ShopApp.Core.Models;
 using ShopApp.Infrastructure.Context;
 using ShopApp.Infrastructure.Persistence;
 using StackExchange.Redis;
@@ -24,6 +25,15 @@ builder.Services.AddSingleton<IConnectionMultiplexer>(sp =>
 
 builder.Services.AddMediatR(cfg =>
     cfg.RegisterServicesFromAssembly(typeof(CreateProductCommandHandler).Assembly));
+
+var jwtSettings = new JwtSettings
+{
+    Key = Environment.GetEnvironmentVariable("JWT__KEY")!,
+    Issuer = Environment.GetEnvironmentVariable("JWT__ISSUER")!,
+    Audience = Environment.GetEnvironmentVariable("JWT__AUDIENCE")!
+};
+
+builder.Services.AddSingleton(jwtSettings);
 
 builder.Services.AddScoped<IProductRepository, ProductRepository>();
 builder.Services.AddScoped<ICacheService, CacheService>();

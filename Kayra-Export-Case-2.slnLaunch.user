@@ -1,0 +1,15 @@
+[
+  {
+    "Name": "New Profile",
+    "Projects": [
+      {
+        "Path": "src\\ShopApp.API\\ShopApp.API.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "src\\ShopApp.Auth\\ShopApp.Auth.csproj",
+        "Action": "Start"
+      }
+    ]
+  }
+]
