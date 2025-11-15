@@ -19,6 +19,7 @@ namespace ShopApp.API.Controllers
         }
 
         [HttpGet]
+        [Authorize]
         public async Task<IActionResult> GetAll()
         {
             var products = await _mediator.Send(new GetAllProductsQuery());

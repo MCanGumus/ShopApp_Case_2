@@ -1,0 +1,233 @@
+2025-11-15 14:34:25.327 +03:00 [INF] Now listening on: http://localhost:7241
+2025-11-15 14:34:25.357 +03:00 [INF] Now listening on: http://localhost:5192
+2025-11-15 14:34:25.424 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-11-15 14:34:25.427 +03:00 [INF] Hosting environment: Development
+2025-11-15 14:34:25.429 +03:00 [INF] Content root path: C:\Users\PC\Desktop\2026\Projeler\Kayra-Export-Case-2\src\ShopApp.Auth
+2025-11-15 14:35:30.643 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7241/swagger/index.html - null null
+2025-11-15 14:35:30.855 +03:00 [INF] HTTP GET /swagger/index.html responded 200 in 81.0436 ms
+2025-11-15 14:35:30.873 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7241/swagger/index.html - 200 null text/html;charset=utf-8 230.5823ms
+2025-11-15 14:35:30.887 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7241/swagger/swagger-ui.css - null null
+2025-11-15 14:35:30.893 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7241/swagger/index.js - null null
+2025-11-15 14:35:30.888 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7241/swagger/index.css - null null
+2025-11-15 14:35:30.888 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7241/swagger/swagger-ui-bundle.js - null null
+2025-11-15 14:35:30.904 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7241/swagger/swagger-ui-standalone-preset.js - null null
+2025-11-15 14:35:30.921 +03:00 [INF] HTTP GET /swagger/index.js responded 200 in 0.9820 ms
+2025-11-15 14:35:30.933 +03:00 [INF] Sending file. Request path: '/index.css'. Physical path: 'N/A'
+2025-11-15 14:35:30.935 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7241/swagger/index.js - 200 null application/javascript;charset=utf-8 41.9708ms
+2025-11-15 14:35:30.942 +03:00 [INF] HTTP GET /swagger/index.css responded 200 in 20.3086 ms
+2025-11-15 14:35:30.905 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7241/_vs/browserLink - null null
+2025-11-15 14:35:30.951 +03:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2025-11-15 14:35:30.951 +03:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2025-11-15 14:35:30.956 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7241/swagger/index.css - 200 202 text/css 67.6832ms
+2025-11-15 14:35:30.962 +03:00 [INF] HTTP GET /swagger/swagger-ui.css responded 200 in 55.4343 ms
+2025-11-15 14:35:30.962 +03:00 [INF] HTTP GET /swagger/swagger-ui-standalone-preset.js responded 200 in 28.8101 ms
+2025-11-15 14:35:30.969 +03:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2025-11-15 14:35:30.970 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7241/_framework/aspnetcore-browser-refresh.js - null null
+2025-11-15 14:35:30.974 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7241/swagger/swagger-ui.css - 200 152034 text/css 86.9158ms
+2025-11-15 14:35:30.975 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7241/swagger/swagger-ui-standalone-preset.js - 200 230293 text/javascript 70.7244ms
+2025-11-15 14:35:30.977 +03:00 [INF] HTTP GET /swagger/swagger-ui-bundle.js responded 200 in 52.2243 ms
+2025-11-15 14:35:30.982 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7241/_framework/aspnetcore-browser-refresh.js - 200 13776 application/javascript; charset=utf-8 11.5286ms
+2025-11-15 14:35:30.991 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7241/_vs/browserLink - 200 null text/javascript; charset=UTF-8 86.6102ms
+2025-11-15 14:35:30.992 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7241/swagger/swagger-ui-bundle.js - 200 1452753 text/javascript 103.4742ms
+2025-11-15 14:35:31.085 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7241/swagger/favicon-32x32.png - null null
+2025-11-15 14:35:31.089 +03:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2025-11-15 14:35:31.090 +03:00 [INF] HTTP GET /swagger/favicon-32x32.png responded 200 in 1.4083 ms
+2025-11-15 14:35:31.091 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7241/swagger/favicon-32x32.png - 200 628 image/png 5.8837ms
+2025-11-15 14:35:31.125 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7241/swagger/v1/swagger.json - null null
+2025-11-15 14:35:31.136 +03:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 6.9309 ms
+2025-11-15 14:35:31.138 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7241/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 12.8435ms
+2025-11-15 14:35:37.729 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:7241/api/User/Login - application/json 49
+2025-11-15 14:35:37.742 +03:00 [INF] CORS policy execution failed.
+2025-11-15 14:35:37.743 +03:00 [INF] Request origin http://localhost:7241 does not have permission to access the resource.
+2025-11-15 14:35:37.747 +03:00 [WRN] Failed to determine the https port for redirect.
+2025-11-15 14:35:37.750 +03:00 [INF] Executing endpoint 'ShopApp.Auth.Controllers.UserController.Login (ShopApp.Auth)'
+2025-11-15 14:35:37.781 +03:00 [INF] Route matched with {action = "Login", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(ShopApp.Application.Features.Users.Queries.LoginUserQuery) on controller ShopApp.Auth.Controllers.UserController (ShopApp.Auth).
+2025-11-15 14:35:37.788 +03:00 [WRN] You do not have a valid license key for the Lucky Penny software MediatR. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+2025-11-15 14:35:39.833 +03:00 [INF] Executed DbCommand (50ms) [Parameters=[@__username_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT u."Id", u."CreatedAt", u."Email", u."IsActive", u."PasswordHash", u."UpdatedAt", u."Username"
+FROM "Users" AS u
+WHERE u."Username" = @__username_0
+LIMIT 1
+2025-11-15 14:35:42.991 +03:00 [INF] Executed action ShopApp.Auth.Controllers.UserController.Login (ShopApp.Auth) in 5203.1291ms
+2025-11-15 14:35:42.995 +03:00 [INF] Executed endpoint 'ShopApp.Auth.Controllers.UserController.Login (ShopApp.Auth)'
+2025-11-15 14:35:42.999 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.UnauthorizedAccessException: Invalid credentials
+   at ShopApp.Application.Features.Users.Handlers.Queries.LoginUserQueryHandler.Handle(LoginUserQuery request, CancellationToken cancellationToken) in C:\Users\PC\Desktop\2026\Projeler\Kayra-Export-Case-2\src\ShopApp.Application\Features\Users\Handlers\Queries\LoginUserQueryHandler.cs:line 37
+   at ShopApp.Auth.Controllers.UserController.Login(LoginUserQuery command) in C:\Users\PC\Desktop\2026\Projeler\Kayra-Export-Case-2\src\ShopApp.Auth\Controllers\UserController.cs:line 28
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2025-11-15 14:35:43.071 +03:00 [ERR] Unhandled exception occurred
+System.UnauthorizedAccessException: Invalid credentials
+   at ShopApp.Application.Features.Users.Handlers.Queries.LoginUserQueryHandler.Handle(LoginUserQuery request, CancellationToken cancellationToken) in C:\Users\PC\Desktop\2026\Projeler\Kayra-Export-Case-2\src\ShopApp.Application\Features\Users\Handlers\Queries\LoginUserQueryHandler.cs:line 37
+   at ShopApp.Auth.Controllers.UserController.Login(LoginUserQuery command) in C:\Users\PC\Desktop\2026\Projeler\Kayra-Export-Case-2\src\ShopApp.Auth\Controllers\UserController.cs:line 28
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2025-11-15 14:35:43.083 +03:00 [ERR] HTTP POST /api/User/Login responded 500 in 5344.4445 ms
+2025-11-15 14:35:43.092 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:7241/api/User/Login - 500 null application/json; charset=utf-8 5362.5492ms
+2025-11-15 14:36:08.609 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7241/swagger/index.html - null null
+2025-11-15 14:36:08.617 +03:00 [INF] HTTP GET /swagger/index.html responded 200 in 0.5961 ms
+2025-11-15 14:36:08.619 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7241/swagger/index.html - 200 null text/html;charset=utf-8 10.6936ms
+2025-11-15 14:36:08.649 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7241/swagger/index.js - null null
+2025-11-15 14:36:08.649 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7241/_vs/browserLink - null null
+2025-11-15 14:36:08.650 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7241/_framework/aspnetcore-browser-refresh.js - null null
+2025-11-15 14:36:08.683 +03:00 [INF] HTTP GET /swagger/index.js responded 200 in 0.3380 ms
+2025-11-15 14:36:08.689 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7241/_framework/aspnetcore-browser-refresh.js - 200 13776 application/javascript; charset=utf-8 39.0124ms
+2025-11-15 14:36:08.699 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7241/swagger/index.js - 200 null application/javascript;charset=utf-8 49.7121ms
+2025-11-15 14:36:08.703 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7241/_vs/browserLink - 200 null text/javascript; charset=UTF-8 54.0168ms
+2025-11-15 14:36:08.976 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7241/swagger/favicon-32x32.png - null null
+2025-11-15 14:36:08.983 +03:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2025-11-15 14:36:08.984 +03:00 [INF] HTTP GET /swagger/favicon-32x32.png responded 200 in 2.6767 ms
+2025-11-15 14:36:08.986 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7241/swagger/favicon-32x32.png - 499 628 image/png 10.0973ms
+2025-11-15 14:36:09.015 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7241/swagger/v1/swagger.json - null null
+2025-11-15 14:36:09.023 +03:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 4.5461 ms
+2025-11-15 14:36:09.026 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7241/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 10.3685ms
+2025-11-15 14:36:11.251 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7241/swagger/index.html - null null
+2025-11-15 14:36:11.256 +03:00 [INF] HTTP GET /swagger/index.html responded 200 in 0.3981 ms
+2025-11-15 14:36:11.258 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7241/swagger/index.html - 200 null text/html;charset=utf-8 6.6408ms
+2025-11-15 14:36:11.300 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7241/swagger/index.js - null null
+2025-11-15 14:36:11.301 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7241/_vs/browserLink - null null
+2025-11-15 14:36:11.301 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7241/_framework/aspnetcore-browser-refresh.js - null null
+2025-11-15 14:36:11.304 +03:00 [INF] HTTP GET /swagger/index.js responded 200 in 0.2616 ms
+2025-11-15 14:36:11.316 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7241/_framework/aspnetcore-browser-refresh.js - 200 13776 application/javascript; charset=utf-8 15.2006ms
+2025-11-15 14:36:11.319 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7241/swagger/index.js - 200 null application/javascript;charset=utf-8 19.2739ms
+2025-11-15 14:36:11.330 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7241/_vs/browserLink - 200 null text/javascript; charset=UTF-8 29.0206ms
+2025-11-15 14:36:11.646 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7241/swagger/favicon-32x32.png - null null
+2025-11-15 14:36:11.651 +03:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2025-11-15 14:36:11.653 +03:00 [INF] HTTP GET /swagger/favicon-32x32.png responded 200 in 2.1522 ms
+2025-11-15 14:36:11.655 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7241/swagger/favicon-32x32.png - 499 628 image/png 8.7229ms
+2025-11-15 14:36:11.694 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7241/swagger/v1/swagger.json - null null
+2025-11-15 14:36:11.699 +03:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 1.3670 ms
+2025-11-15 14:36:11.702 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7241/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 7.7835ms
+2025-11-15 14:36:16.020 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:7241/api/User/Login - application/json 50
+2025-11-15 14:36:16.024 +03:00 [INF] CORS policy execution failed.
+2025-11-15 14:36:16.025 +03:00 [INF] Request origin http://localhost:7241 does not have permission to access the resource.
+2025-11-15 14:36:16.026 +03:00 [INF] Executing endpoint 'ShopApp.Auth.Controllers.UserController.Login (ShopApp.Auth)'
+2025-11-15 14:36:16.032 +03:00 [INF] Route matched with {action = "Login", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(ShopApp.Application.Features.Users.Queries.LoginUserQuery) on controller ShopApp.Auth.Controllers.UserController (ShopApp.Auth).
+2025-11-15 14:36:16.049 +03:00 [INF] Executed DbCommand (6ms) [Parameters=[@__username_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT u."Id", u."CreatedAt", u."Email", u."IsActive", u."PasswordHash", u."UpdatedAt", u."Username"
+FROM "Users" AS u
+WHERE u."Username" = @__username_0
+LIMIT 1
+2025-11-15 14:36:20.884 +03:00 [INF] Executed action ShopApp.Auth.Controllers.UserController.Login (ShopApp.Auth) in 4850.8838ms
+2025-11-15 14:36:20.888 +03:00 [INF] Executed endpoint 'ShopApp.Auth.Controllers.UserController.Login (ShopApp.Auth)'
+2025-11-15 14:36:20.889 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.UnauthorizedAccessException: Invalid credentials
+   at ShopApp.Application.Features.Users.Handlers.Queries.LoginUserQueryHandler.Handle(LoginUserQuery request, CancellationToken cancellationToken) in C:\Users\PC\Desktop\2026\Projeler\Kayra-Export-Case-2\src\ShopApp.Application\Features\Users\Handlers\Queries\LoginUserQueryHandler.cs:line 37
+   at ShopApp.Auth.Controllers.UserController.Login(LoginUserQuery command)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2025-11-15 14:36:20.895 +03:00 [ERR] Unhandled exception occurred
+System.UnauthorizedAccessException: Invalid credentials
+   at ShopApp.Application.Features.Users.Handlers.Queries.LoginUserQueryHandler.Handle(LoginUserQuery request, CancellationToken cancellationToken) in C:\Users\PC\Desktop\2026\Projeler\Kayra-Export-Case-2\src\ShopApp.Application\Features\Users\Handlers\Queries\LoginUserQueryHandler.cs:line 37
+   at ShopApp.Auth.Controllers.UserController.Login(LoginUserQuery command)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2025-11-15 14:36:20.901 +03:00 [ERR] HTTP POST /api/User/Login responded 500 in 4877.5854 ms
+2025-11-15 14:36:20.904 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:7241/api/User/Login - 500 null application/json; charset=utf-8 4883.1347ms
+2025-11-15 14:36:35.768 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:7241/api/User/Login - application/json 55
+2025-11-15 14:36:35.772 +03:00 [INF] CORS policy execution failed.
+2025-11-15 14:36:35.773 +03:00 [INF] Request origin http://localhost:7241 does not have permission to access the resource.
+2025-11-15 14:36:35.774 +03:00 [INF] Executing endpoint 'ShopApp.Auth.Controllers.UserController.Login (ShopApp.Auth)'
+2025-11-15 14:36:35.775 +03:00 [INF] Route matched with {action = "Login", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(ShopApp.Application.Features.Users.Queries.LoginUserQuery) on controller ShopApp.Auth.Controllers.UserController (ShopApp.Auth).
+2025-11-15 14:36:35.852 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[@__username_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT u."Id", u."CreatedAt", u."Email", u."IsActive", u."PasswordHash", u."UpdatedAt", u."Username"
+FROM "Users" AS u
+WHERE u."Username" = @__username_0
+LIMIT 1
+2025-11-15 14:36:38.669 +03:00 [INF] Executed action ShopApp.Auth.Controllers.UserController.Login (ShopApp.Auth) in 2891.6889ms
+2025-11-15 14:36:38.672 +03:00 [INF] Executed endpoint 'ShopApp.Auth.Controllers.UserController.Login (ShopApp.Auth)'
+2025-11-15 14:36:38.674 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.UnauthorizedAccessException: Invalid credentials
+   at ShopApp.Application.Features.Users.Handlers.Queries.LoginUserQueryHandler.Handle(LoginUserQuery request, CancellationToken cancellationToken) in C:\Users\PC\Desktop\2026\Projeler\Kayra-Export-Case-2\src\ShopApp.Application\Features\Users\Handlers\Queries\LoginUserQueryHandler.cs:line 37
+   at ShopApp.Auth.Controllers.UserController.Login(LoginUserQuery command)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2025-11-15 14:36:38.679 +03:00 [ERR] Unhandled exception occurred
+System.UnauthorizedAccessException: Invalid credentials
+   at ShopApp.Application.Features.Users.Handlers.Queries.LoginUserQueryHandler.Handle(LoginUserQuery request, CancellationToken cancellationToken) in C:\Users\PC\Desktop\2026\Projeler\Kayra-Export-Case-2\src\ShopApp.Application\Features\Users\Handlers\Queries\LoginUserQueryHandler.cs:line 37
+   at ShopApp.Auth.Controllers.UserController.Login(LoginUserQuery command)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2025-11-15 14:36:38.682 +03:00 [ERR] HTTP POST /api/User/Login responded 500 in 2910.8933 ms
+2025-11-15 14:36:38.684 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:7241/api/User/Login - 500 null application/json; charset=utf-8 2916.9269ms
+2025-11-15 14:36:46.331 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:7241/api/User/Login - application/json 54
+2025-11-15 14:36:46.335 +03:00 [INF] CORS policy execution failed.
+2025-11-15 14:36:46.336 +03:00 [INF] Request origin http://localhost:7241 does not have permission to access the resource.
+2025-11-15 14:36:46.338 +03:00 [INF] Executing endpoint 'ShopApp.Auth.Controllers.UserController.Login (ShopApp.Auth)'
+2025-11-15 14:36:46.339 +03:00 [INF] Route matched with {action = "Login", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(ShopApp.Application.Features.Users.Queries.LoginUserQuery) on controller ShopApp.Auth.Controllers.UserController (ShopApp.Auth).
+2025-11-15 14:36:46.345 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__username_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT u."Id", u."CreatedAt", u."Email", u."IsActive", u."PasswordHash", u."UpdatedAt", u."Username"
+FROM "Users" AS u
+WHERE u."Username" = @__username_0
+LIMIT 1
+2025-11-15 14:36:46.604 +03:00 [INF] Executing OkObjectResult, writing value of type 'ShopApp.Application.Dtos.AuthResult'.
+2025-11-15 14:36:46.610 +03:00 [INF] Executed action ShopApp.Auth.Controllers.UserController.Login (ShopApp.Auth) in 268.8239ms
+2025-11-15 14:36:46.612 +03:00 [INF] Executed endpoint 'ShopApp.Auth.Controllers.UserController.Login (ShopApp.Auth)'
+2025-11-15 14:36:46.613 +03:00 [INF] HTTP POST /api/User/Login responded 200 in 278.0288 ms
+2025-11-15 14:36:46.615 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:7241/api/User/Login - 200 null application/json; charset=utf-8 284.017ms

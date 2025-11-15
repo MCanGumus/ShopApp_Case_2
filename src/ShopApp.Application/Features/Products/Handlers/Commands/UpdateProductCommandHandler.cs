@@ -1,4 +1,5 @@
 ﻿using MediatR;
+using Serilog;
 using ShopApp.Application.Features.Products.Commands;
 using ShopApp.Core.Entities;
 using ShopApp.Core.Interfaces;
@@ -26,7 +27,10 @@ namespace ShopApp.Application.Features.Products.Handlers.Commands
             var existingProduct = await _productRepository.GetByIdAsync(request.Id, cancellationToken);
 
             if (existingProduct == null)
+            {
+                Log.Warning("Product with Id {ProductId} not found for update", request.Id);
                 throw new KeyNotFoundException("Product not found");
+            }
 
             existingProduct.Name = request.Name;
             existingProduct.Description = request.Description;
@@ -40,6 +44,8 @@ namespace ShopApp.Application.Features.Products.Handlers.Commands
 
             await _cacheService.RemoveAsync($"products:category:{existingProduct.Category}");
             await _cacheService.RemoveAsync("products:all");
+
+            Log.Information("Product with Id {ProductId} updated successfully", existingProduct.Id);
 
             return existingProduct;
         }

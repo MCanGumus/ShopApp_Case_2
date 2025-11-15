@@ -1,4 +1,5 @@
 ﻿using MediatR;
+using Serilog;
 using ShopApp.Application.Features.Products.Commands;
 using ShopApp.Core.Interfaces;
 using System;
@@ -23,13 +24,19 @@ namespace ShopApp.Application.Features.Products.Handlers.Commands
         public async Task Handle(DeleteProductCommand request, CancellationToken cancellationToken)
         {
             var existingProduct = await _productRepository.GetByIdAsync(request.Id, cancellationToken);
+
             if (existingProduct == null)
-                throw new KeyNotFoundException("Product not found");
+            {
+                Log.Warning("Product with Id {ProductId} not found", request.Id);
+                throw new KeyNotFoundException("Product not found"); // Global handler yakalar
+            }
 
             await _productRepository.DeleteAsync(request.Id, cancellationToken);
-           
-            await _cacheService.RemoveAsync($"products:category:{existingProduct.Category}"); 
+
+            await _cacheService.RemoveAsync($"products:category:{existingProduct.Category}");
             await _cacheService.RemoveAsync("products:all");
+
+            Log.Information("Product with Id {ProductId} deleted successfully", request.Id);
 
         }
     }

@@ -1,4 +1,5 @@
 ﻿using MediatR;
+using Serilog;
 using ShopApp.Application.Features.Users.Commands;
 using ShopApp.Core.Entities;
 using ShopApp.Core.Interfaces;
@@ -19,8 +20,16 @@ namespace ShopApp.Application.Features.Users.Handlers.Commands
             _repository = repository;
             _passwordHasher = passwordHasher;
         }
-        public Task<User> Handle(CreateUserCommand request, CancellationToken cancellationToken)
+        public async Task<User> Handle(CreateUserCommand request, CancellationToken cancellationToken)
         {
+            var existingUsername = await _repository.GetUserByUsername(request.Username, cancellationToken);
+
+            if (existingUsername != null)
+            {
+                Log.Warning("Username {Username} already exists", request.Username);
+                throw new InvalidOperationException("Username already exists");
+            }
+
             User user = new User
             {
                 Id = Guid.NewGuid(),
@@ -31,7 +40,9 @@ namespace ShopApp.Application.Features.Users.Handlers.Commands
                 IsActive = true,
             };
 
-            var addedUser = _repository.AddUserAsync(user, cancellationToken);
+            var addedUser = await _repository.AddUserAsync(user, cancellationToken);
+
+            Log.Information("User {Username} registered successfully", request.Username);
 
             return addedUser;
         }

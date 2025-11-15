@@ -1,4 +1,5 @@
 ﻿using MediatR;
+using Serilog;
 using ShopApp.Application.Features.Users.Commands;
 using ShopApp.Core.Interfaces;
 using System;
@@ -18,7 +19,17 @@ namespace ShopApp.Application.Features.Users.Handlers.Commands
         }
         public async Task Handle(DeleteUserCommand request, CancellationToken cancellationToken)
         {
+            var existingUser = await _userRepository.GetUserByIdAsync(request.Id, cancellationToken);
+
+            if (existingUser == null)
+            {
+                Log.Warning("User with Id {UserId} not found", request.Id);
+                throw new KeyNotFoundException("User not found");
+            }
+
             await _userRepository.DeleteUserAsync(request.Id, cancellationToken);
+
+            Log.Information("User with Id {UserId} deleted successfully", request.Id);
         }
     }
 }
