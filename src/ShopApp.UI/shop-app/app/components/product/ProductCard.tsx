@@ -11,7 +11,7 @@ interface Product {
   id: string;
   name: string;
   price: number;
-  image: string;
+  imageUrl: string;
   category: string | { name: string } | null;
 }
 
@@ -28,7 +28,7 @@ export default function ProductCard({ product, getCategoryValue }: Props) {
     <div className="bg-white rounded-2xl shadow-md p-4 hover:shadow-lg transition">
       <Link href={`/products/${product.id}`}>
         <Image
-          src={product.image || "/next.svg"}
+          src={product.imageUrl || "/next.svg"}
           alt={product.name}
           width={500}
           height={500}

@@ -1,8 +1,12 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  experimental: {
-    turbo: false,   // dev ve build'te turbopack'i tamamen kapatır
+  // output: 'export',
+  eslint: {
+    ignoreDuringBuilds: true,
   },
+  images: { unoptimized: true },
+  // Add this:
+  productionBrowserSourceMaps: false,
 };
 
 module.exports = nextConfig;

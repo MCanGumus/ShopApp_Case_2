@@ -12,7 +12,7 @@ interface Product {
   id: string;
   name: string;
   price: number;
-  image: string;
+  imageUrl: string;
   category: string | { name: string } | null;
 }
 

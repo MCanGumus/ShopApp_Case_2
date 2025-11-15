@@ -1,52 +1,43 @@
-"use client";
-import React, { useEffect, useState } from "react";
-import { useParams, useRouter } from "next/navigation";
-import { apiFetch } from "@/utils/api";
-import Image from "next/image";
-import ProductDetailActions from "@/app/components/product/ProductDetailClient";
 
+import ProductDetailClient from "@/app/components/product/ProductDetailClient";
 
 interface Product {
   id: string;
   name: string;
   price: number;
-  image: string;
+  imageUrl: string;
   category: string | { name: string } | null;
-  description?: string;
+  description: string;
 }
 
-export default function ProductDetailPage() {
-  const params = useParams();
-  const router = useRouter();
-  const { id } = params;
-  const [product, setProduct] = useState<Product | null>(null);
-  const [loading, setLoading] = useState(true);
-  
+export async function generateMetadata({ params,
+}: {
+  params: Promise<{ id: string }>;
+}) {
+  const { id } = await params;
 
-  useEffect(() => {
-    const fetchProduct = async () => {
-      const res = await apiFetch(`/Products/${id}`);
-      if (!res) return;
-      const data: Product = await res.json();
-      setProduct(data);
-      setLoading(false);
-    };
-    fetchProduct();
-  }, [id]);
-
-  if (loading) return <div>Yükleniyor...</div>;
-  if (!product) return <p>Ürün bulunamadı</p>;
-
-  const getCategoryValue = (p: Product) => {
-    if (!p || p.category == null) return null;
-    if (typeof p.category === "string") return p.category.trim();
-    if (typeof p.category === "object" && "name" in p.category) return p.category.name.trim();
-    return null;
+  const res = await fetch(`http://localhost:7072/api/Products/${id}`, {
+    cache: 'no-store'
+  });
+  if (!res.ok) return { title: "Ürün bulunamadı", description: "" };
+  const product: Product = await res.json();
+  return {
+    title: product.name,
+    description: product.description || `${product.name} ürününü inceleyin.`,
   };
+}
 
-  return (
+export default async function ProductDetailPage({ params,
+}: {
+  params: Promise<{ id: string }>;
+}) {
+  const { id } = await params;
 
-    <ProductDetailActions product={product} />
+  const res = await fetch(`http://localhost:7072/api/Products/${id}`, {
+    cache: 'no-store'
+  });
 
-  );
+  if (!res.ok) return <p>Ürün bulunamadı</p>;
+  const product: Product = await res.json();
+  return <ProductDetailClient product={product} />;
 }

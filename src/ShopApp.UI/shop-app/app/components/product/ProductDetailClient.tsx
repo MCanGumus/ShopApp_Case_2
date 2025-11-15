@@ -1,4 +1,6 @@
+
 "use client";
+
 import React from "react";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
@@ -13,9 +15,9 @@ interface Product {
   id: string;
   name: string;
   price: number;
-  image: string;
+  imageUrl: string;
   category: string | { name: string } | null;
-  description?: string;
+  description: string;
 }
 
 interface Props {
@@ -23,9 +25,9 @@ interface Props {
 }
 
 export default function ProductDetailClient({ product }: Props) {
-  const cartItems = useSelector((state: RootState) => state.cart.items);
   const router = useRouter();
   const dispatch = useDispatch<AppDispatch>();
+  const cartItems = useSelector((state: RootState) => state.cart.items);
 
   const getCategoryValue = (p: Product) => {
     if (!p || p.category == null) return null;
@@ -49,7 +51,7 @@ export default function ProductDetailClient({ product }: Props) {
 
       <div className="bg-white p-6 rounded-2xl shadow-lg max-w-4xl mx-auto flex flex-col lg:flex-row gap-6">
         <Image
-          src={product.image || "/next.svg"}
+          src={product.imageUrl || "/next.svg"}
           alt={product.name}
           width={500}
           height={500}
@@ -57,7 +59,7 @@ export default function ProductDetailClient({ product }: Props) {
         />
         <div className="flex-1 flex flex-col justify-between">
           <div>
-            <h1 className="text-3xl font-bold mb-2">{product.name}</h1>
+            <h1 className="text-3xl font-bold mb-2 text-gray-900">{product.name}</h1>
             <p className="text-gray-600 mb-2">{getCategoryValue(product) || "Kategori Yok"}</p>
             <p className="text-gray-800 text-xl font-semibold mb-4">{product.price} TL</p>
             <p className="text-gray-700">{product.description || "Ürün açıklaması yok."}</p>
