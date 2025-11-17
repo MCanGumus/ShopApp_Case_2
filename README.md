@@ -32,7 +32,7 @@ dotnet build -c Debug
 
 Konsolda çıkan URL'leri takip edin (`http://localhost:5193` veya `https://localhost:7072`).
 
-### Frontend çalıştırma (varsa)
+### Frontend çalıştırma
 
 ```bash
 cd src/ShopApp.UI/shop-app
